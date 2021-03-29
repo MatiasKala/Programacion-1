@@ -1,0 +1,52 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>150</x><y>21</y><w>210</w><h>180</h></coordinates><panel_attributes>Veterinaria
+
+
+
+
+
+
+
+-
++agregarMascota(Mascota):void
++finalizarConsulta():void
++obtenerUltimas10():Cola&lt;Mascota&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>111</y><w>140</w><h>200</h></coordinates><panel_attributes>lt=&lt;-
+-mascotasEnEspera
+m1=1</panel_attributes><additional_attributes>10;180;10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>291</y><w>100</w><h>50</h></coordinates><panel_attributes>Cola
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>191</y><w>30</w><h>220</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;200;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>61</y><w>170</w><h>70</h></coordinates><panel_attributes>/ListaOrdenadaNodos&lt;K,T&gt;/
+--
+--
+/+ compare(T,T): int/
+/+ compareByKey(K,T): int/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>261</y><w>230</w><h>70</h></coordinates><panel_attributes>ListaDeMascotasPorDniDuenio
+-
+*+ compare(Mascota,Mascota): int*
+*+ compareByKey(String,Mascota): int*
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>349</x><y>151</y><w>160</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-registro
+m1=1</panel_attributes><additional_attributes>100;110;100;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>391</y><w>120</w><h>80</h></coordinates><panel_attributes>Mascota
+-
+-nombre:String
+-dniDuenio:String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>521</y><w>170</w><h>200</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoMascota
+-
+-precio:double
++PERRO_GRANDE(1000)
++PERRO_MEDIANO(750)
++PERRO_CHICO(500)
++GATO_DE_RAZA(1500)
++GATO_SIN_RAZA(750)
++PAJARO_EXOTICO(100)
++PAJARO_NO_EXOTICO(50)
+
+-
+-TipoMascota(double)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>461</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>521</y><w>120</w><h>70</h></coordinates><panel_attributes>Pajaro
+-
+-peso:double
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>121</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>431</y><w>220</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-tipo
+m1=1</panel_attributes><additional_attributes>180;90;180;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>191</y><w>130</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+-ultimas10
+m1=1</panel_attributes><additional_attributes>10;130;110;130;110;10</additional_attributes></element></diagram>
